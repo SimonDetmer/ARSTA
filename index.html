@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARS-TA Inspiriertes Template</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-white text-gray-900">
+
+<!-- Navigation -->
+<header class="bg-white fixed w-full top-0 left-0 z-50 shadow-sm">
+    <nav class="max-w-6xl mx-auto flex justify-between items-center py-4 px-6">
+        <a href="#" class="text-2xl font-bold tracking-wide">ARS-TA</a>
+        <ul class="hidden md:flex space-x-6 text-gray-700">
+            <li><a href="#about" class="hover:text-blue-600">Über uns</a></li>
+            <li><a href="#leistungen" class="hover:text-blue-600">Leistungen</a></li>
+            <li><a href="#kontakt" class="hover:text-blue-600">Kontakt</a></li>
+        </ul>
+        <button class="md:hidden p-2 border rounded">☰</button>
+    </nav>
+</header>
+
+<!-- Hero -->
+<section id="home" class="h-screen bg-gray-100 flex items-center justify-center pt-20 relative">
+    <img src="https://via.placeholder.com/1600x900" alt="Hero Bild" class="absolute inset-0 w-full h-full object-cover">
+    <div class="relative bg-black/50 text-white text-center px-6 py-12 rounded-xl">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">Architektur trifft Design</h1>
+        <p class="text-lg md:text-xl max-w-2xl mx-auto">Zeitlose Konzepte für moderne Räume – inspiriert von Ars-ta.</p>
+    </div>
+</section>
+
+<!-- Intro -->
+<section id="intro" class="py-16 max-w-4xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold mb-6">Über uns</h2>
+    <p class="text-lg leading-relaxed">
+        Wir entwickeln individuelle Lösungen für Architektur, Design und visuelle Kommunikation.
+        Unser Anspruch: klare Strukturen, hochwertige Gestaltung, nachhaltige Wirkung.
+    </p>
+</section>
+
+<!-- Grid-Bereich -->
+<section id="about" class="py-16 max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+    <div>
+        <h3 class="text-2xl font-semibold mb-4">Unsere Philosophie</h3>
+        <p class="mb-4">Inspiration und Funktionalität stehen für uns im Einklang. Wir begleiten Projekte von der ersten Idee bis zur Umsetzung.</p>
+        <p>So entstehen Räume und Erlebnisse, die Bestand haben – architektonisch wie visuell.</p>
+    </div>
+    <img src="https://via.placeholder.com/600x400" alt="Bild Philosophie" class="rounded-xl shadow-md">
+</section>
+
+<!-- Leistungen -->
+<section id="leistungen" class="py-16 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-12">Leistungen</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg">
+                <h3 class="text-xl font-semibold mb-4">Architektur</h3>
+                <p>Von Entwurf bis Detail – präzise Planung und kreative Konzepte.</p>
+            </div>
+            <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg">
+                <h3 class="text-xl font-semibold mb-4">Innenräume</h3>
+                <p>Individuelle Gestaltung mit Fokus auf Funktion und Atmosphäre.</p>
+            </div>
+            <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg">
+                <h3 class="text-xl font-semibold mb-4">Design</h3>
+                <p>Grafik, Branding und digitale Medien – visuelle Identitäten mit Wirkung.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Kontakt -->
+<section id="kontakt" class="py-16 max-w-4xl mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-8 text-center">Kontakt</h2>
+    <form class="grid gap-6">
+        <input type="text" placeholder="Dein Name" class="border p-3 rounded-lg w-full">
+        <input type="email" placeholder="Deine E-Mail" class="border p-3 rounded-lg w-full">
+        <textarea placeholder="Deine Nachricht" rows="5" class="border p-3 rounded-lg w-full"></textarea>
+        <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Absenden</button>
+    </form>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-gray-300 py-6 text-center text-sm">
+    <p>© 2025 ARS-TA Inspiriertes Template</p>
+    <a href="#" class="block mt-2 hover:text-white">Impressum</a>
+</footer>
+
+</body>
+</html>
