@@ -5,11 +5,27 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Only apply the effect on non-touch devices to prevent issues on mobile
     if (!('ontouchstart' in window || navigator.maxTouchPoints)) {
+        // Create background element
+        const heroBg = document.createElement('div');
+        heroBg.className = 'parallax-bg';
+        
+        // Get the background image from the section's style
+        const bgImage = window.getComputedStyle(heroSection).backgroundImage;
+        heroBg.style.backgroundImage = bgImage;
+        
+        // Clear the background from the section
+        heroSection.style.backgroundImage = 'none';
+        
+        // Add the background element to the section
+        heroSection.insertBefore(heroBg, heroSection.firstChild);
+        
+        // Add scroll event listener
         window.addEventListener('scroll', function() {
-            // Calculate the scroll position
             const scrollPosition = window.pageYOffset;
-            // Apply the parallax effect (slower movement for background)
-            heroSection.style.backgroundPositionY = scrollPosition * 0.5 + 'px';
+            // Apply the parallax effect with reduced intensity and bounds
+            const maxScroll = 100; // Maximum parallax scroll in pixels
+            const scrollAmount = Math.min(scrollPosition * 0.3, maxScroll);
+            heroBg.style.transform = `translateY(${scrollAmount}px)`;
         });
     }
 

@@ -6,11 +6,22 @@ body {
 /* Parallax Effect */
 .parallax {
     position: relative;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.parallax-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100%;
+    will-change: transform;
+    z-index: -1;
 }
 
 /* Smooth scrolling */
@@ -309,9 +320,13 @@ h4 {
     padding-bottom: 4rem;
 }
 
-/* Custom background color for Angebote section */
+/* Custom background colors */
 #angebote.bg-gray-50,
-#hintergrund.bg-gray-50 {
+#hintergrund.bg-gray-50,
+#anne.bg-gray-50,
+#rolf.bg-gray-50,
+#simone.bg-gray-50,
+.bg-arsta-pink {
     background-color: #f8f0f4 !important;
     --tw-bg-opacity: 1 !important;
 }
