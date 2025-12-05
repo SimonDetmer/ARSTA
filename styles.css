@@ -309,8 +309,11 @@ h4 {
     padding-bottom: 4rem;
 }
 
-.bg-gray-50 {
-    background-color: #f9fafb;
+/* Custom background color for Angebote section */
+#angebote.bg-gray-50,
+#hintergrund.bg-gray-50 {
+    background-color: #f8f0f4 !important;
+    --tw-bg-opacity: 1 !important;
 }
 
 .max-w-6xl {
