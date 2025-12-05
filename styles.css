@@ -3,6 +3,21 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Parallax Effect */
+.parallax {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
 /* Headings */
 h1, h2, h3, h4, h5, h6,
 .hero-title,
@@ -10,8 +25,49 @@ h1, h2, h3, h4, h5, h6,
 .tile-title,
 .nav-logo {
     font-family: 'Open Sans Condensed', sans-serif;
-    font-weight: 700;
+    font-weight: 300;
     letter-spacing: 0.5px;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+/* Specific heading sizes */
+h1, .hero-title {
+    font-size: 4rem;
+}
+
+h2, .section-title, #angebote h2, #team h2, #hintergrund h2 {
+    font-size: 3.5rem !important;
+    font-weight: 300 !important;
+    margin-bottom: 1.5rem !important;
+}
+
+h3, .tile-title {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    h1, .hero-title {
+        font-size: 3rem;
+    }
+    
+    h2, .section-title, #angebote h2, #team h2, #hintergrund h2 {
+        font-size: 2.5rem !important;
+        margin-bottom: 1.25rem !important;
+    }
+    
+    h3, .tile-title {
+        font-size: 2rem;
+    }
+    
+    h4 {
+        font-size: 1.75rem;
+    }
 }
 
 /* Navigation */
@@ -157,8 +213,6 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .tile-title {
-    font-size: 1.5rem;
-    font-weight: 700;
     margin-bottom: 0;
     transition: all 0.3s ease;
     text-align: center;
@@ -267,3 +321,4 @@ h1, h2, h3, h4, h5, h6,
     margin-left: auto;
     margin-right: auto;
 }
+

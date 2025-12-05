@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ARS-TA Inspiriertes Template</title>
+    <link rel="icon" type="image/png" href="img/ARSTA-Favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap" rel="stylesheet">
@@ -15,7 +16,9 @@
 <!-- Navigation -->
 <header class="bg-white fixed w-full top-0 left-0 z-50 shadow-sm">
     <nav class="max-w-6xl mx-auto flex justify-between items-center py-4 px-6">
-        <a href="#" class="text-2xl font-bold tracking-wide">ARS-TA</a>
+        <a href="#" class="flex items-center">
+            <img src="img/ARSTA_Wortmarke_web.png" alt="ARSTA Logo" class="h-10 md:h-12 w-auto">
+        </a>
         <ul class="hidden md:flex space-x-6 text-gray-700">
             <li><a href="#angebote" class="hover:text-blue-600">Angebote</a></li>
             <li><a href="#team" class="hover:text-blue-600">Team</a></li>
@@ -25,18 +28,27 @@
     </nav>
 </header>
 
-<!-- Hero -->
-<section id="home" class="h-screen bg-gray-100 flex items-center justify-center pt-20 relative">
-    <img src="https://via.placeholder.com/1600x900" alt="Hero Bild" class="absolute inset-0 w-full h-full object-cover">
-    <div class="relative bg-black/50 text-white text-center px-6 py-12 rounded-xl">
-        <h1 class="text-4xl md:text-6xl font-bold mb-6">A - R - S - T - A</h1>
-        <p class="text-lg md:text-xl max-w-2xl mx-auto">Transaktionsanalyse - Coaching - Supervision - Seminare</p>
+<!-- Hero with Parallax -->
+<section id="home" class="relative h-screen pt-20 overflow-hidden parallax" style="background-image: url('img/austin-neill-Be7DMcK7k3o-unsplash.jpg');">
+    <!-- Dark overlay -->
+    <div class="absolute inset-0 bg-black/30"></div>
+
+    <!-- White bar with logo -->
+    <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-screen bg-white/80 py-8 z-10">
+        <div class="max-w-4xl mx-auto px-6 flex justify-center">
+            <img
+                src="img/ARSTA_Logo_Web02.png"
+                alt="ARSTA Logo"
+                class="w-full max-w-md mx-auto"
+            >
+        </div>
     </div>
 </section>
 
+
 <!-- Intro -->
 <section id="intro" class="py-16 max-w-4xl mx-auto px-6 text-center">
-    <h2 class="text-3xl font-bold mb-6">Herzlich Willkommen</h2>
+    <h2 class="text-3xl mb-6">Herzlich Willkommen</h2>
     <p class="text-lg leading-relaxed">
         Schön, dass Sie mehr über uns erfahren wollen! Wir stellen Ihnen unsere langjährige berufliche Erfahrungen aus
         den Bereichen Schule, Jugendhilfe, Sozialpsychiatrie, Beratung und Therapie zur Verfügung.
@@ -46,7 +58,7 @@
 <!-- Angebote Section -->
 <section id="angebote" class="py-16 bg-gray-50">
     <div class="max-w-6xl mx-auto px-6 text-center">
-        <h2 class="text-3xl font-bold mb-12">Angebote</h2>
+        <h2 class="text-3xl mb-12">Angebote</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto relative">
             <div class="offer-tile group">
                 <div class="tile-content">
@@ -120,7 +132,7 @@
 <!-- Team -->
 <section id="team" class="py-16 bg-gray-50">
     <div class="max-w-6xl mx-auto px-6 text-center">
-        <h2 class="text-3xl font-bold mb-12">Team</h2>
+        <h2 class="text-3xl mb-12">Team</h2>
         <p class="text-lg leading-relaxed">
             Als zertifizierte Transaktionsanalytiker arbeiten wir nach einem Verfahren und auf der Basis eines Menschenbildes, bei dem der Schwerpunkt auf der Gestaltung von Begegnungs-, Beziehungs- und Erfahrungsräumen liegt; ein Verfahren, das den Menschen in seiner ganzen Eigenartigkeit und Einzigartigkeit würdigt, und Raum zur Entfaltung und zu persönlichem Wachstum bietet.
         </p>
@@ -170,7 +182,7 @@
 
 <!-- Hintergrund -->
 <section id="hintergrund" class="py-16 max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-12 items-center">
-    <img src="https://via.placeholder.com/600x400" alt="Bild Philosophie" class="rounded-xl shadow-md">
+    <img src="img/luke-richardson-dI7vfR1Bqcg-unsplash.jpg" alt="Bild Philosophie" class="rounded-xl shadow-md w-full h-auto object-cover">
     <div>
         <h3 class="text-2xl font-semibold mb-4">Transaktionsanalyse</h3>
         <p class="mb-4">Die Grundannahmen der Transaktionsanalyse nach ihrem Begründer Eric Berne können wie folgt zusammengefasst werden:
